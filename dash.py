@@ -86,7 +86,7 @@ city = st.sidebar.selectbox("Select City", ["Karachi", "Lahore", "Islamabad"])
 @st.cache_data
 def load_data(city_name):
     try:
-        df = pd.read_csv(f'data/{city_name}_predictions.csv', parse_dates=['date'])
+        df = pd.read_csv(f'data/{city_name}_aqi_forecast.csv', parse_dates=['date'])
         return df
     except FileNotFoundError:
         st.error(f"Data not found for {city_name}. Please run the data pipeline first.")

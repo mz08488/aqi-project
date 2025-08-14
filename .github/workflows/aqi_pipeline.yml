@@ -7,7 +7,7 @@ on:
   workflow_dispatch:      # Allow manual triggering
 
 jobs:
-  fetch_and_process:
+  aqi_processing:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -22,24 +22,30 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Create data directory
-      run: mkdir -p data
+    - name: Create directories
+      run: |
+        mkdir -p data
+        mkdir -p models
       
     - name: Run data fetcher (always)
       run: python data_fetcher.py
       
-    - name: Run feature engineering (hourly)
-      if: github.event_name == 'schedule' && github.event.schedule == '0 * * * *'
-      run: python feature_engineering.py
+    # - name: Run feature engineering (hourly)
+    #   if: github.event_name == 'schedule' && github.event.schedule == '0 * * * *'
+    #   run: python feature_engineering.py
       
     - name: Run model training (daily)
       if: github.event_name == 'schedule' && github.event.schedule == '0 0 * * *'
       run: python model_trainer.py
       
+    - name: Generate predictions (hourly)
+      if: github.event_name == 'schedule' && github.event.schedule == '0 * * * *'
+      run: python predictor.py
+      
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add data/ models/
-        git diff --quiet && git diff --staged --quiet || git commit -m "Update data and models"
+        git add data/ models/ requirements.txt
+        git diff --quiet && git diff --staged --quiet || git commit -m "Automated update: data, models, predictions and requirements"
         git push
