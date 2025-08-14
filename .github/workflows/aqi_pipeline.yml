@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r .github/workflows/requirements.txt
+        pip install -r requirements.txt
     
     - name: Create directories
       run: |
@@ -46,6 +46,6 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add .github\workflows\requirements.txt
+        git add requirements.txt
         git diff --quiet && git diff --staged --quiet || git commit -m "Automated update: data, models, predictions and requirements"
         git push
