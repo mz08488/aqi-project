@@ -35,3 +35,4 @@ retry-requests
 joblib
 openmeteo-requests
 streamlit
+shap
