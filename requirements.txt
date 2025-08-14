@@ -36,3 +36,4 @@ joblib
 openmeteo-requests
 streamlit
 shap
+matplotlib
