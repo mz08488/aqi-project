@@ -37,3 +37,4 @@ openmeteo-requests
 streamlit
 shap
 matplotlib
+plotly
