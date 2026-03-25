@@ -16882,3 +16882,87 @@
 2026-03-24 02:30:36,689 - INFO - random_forest: avg_rmse=8.97, avg_mae=6.21, avg_r2=0.73
 2026-03-24 02:30:36,690 - INFO - ridge: avg_rmse=3.83, avg_mae=2.53, avg_r2=0.94
 2026-03-24 02:30:36,690 - INFO - svr: avg_rmse=15.09, avg_mae=9.73, avg_r2=0.25
+2026-03-25 02:35:13,013 - INFO - 
+=== Training/Retraining Models for Karachi ===
+2026-03-25 02:35:13,013 - INFO - Processing Karachi with data from data/Karachi_historical_aq.csv
+2026-03-25 02:35:13,021 - INFO - Training random_forest for Karachi...
+2026-03-25 02:35:13,293 - INFO - random_forest Fold 1 RMSE: 10.64, MAE: 9.10, R2: 0.57
+2026-03-25 02:35:13,779 - INFO - random_forest Fold 2 RMSE: 8.53, MAE: 6.91, R2: 0.79
+2026-03-25 02:35:14,517 - INFO - random_forest Fold 3 RMSE: 8.33, MAE: 5.44, R2: 0.75
+2026-03-25 02:35:15,530 - INFO - random_forest Fold 4 RMSE: 6.69, MAE: 4.58, R2: 0.75
+2026-03-25 02:35:16,818 - INFO - random_forest Fold 5 RMSE: 5.61, MAE: 4.04, R2: 0.94
+2026-03-25 02:35:16,818 - INFO - random_forest Average RMSE: 7.96, MAE: 6.01, R2: 0.76
+2026-03-25 02:35:18,409 - INFO - Training ridge for Karachi...
+2026-03-25 02:35:18,416 - INFO - ridge Fold 1 RMSE: 5.34, MAE: 4.45, R2: 0.89
+2026-03-25 02:35:18,422 - INFO - ridge Fold 2 RMSE: 4.35, MAE: 3.30, R2: 0.95
+2026-03-25 02:35:18,427 - INFO - ridge Fold 3 RMSE: 4.66, MAE: 2.93, R2: 0.92
+2026-03-25 02:35:18,433 - INFO - ridge Fold 4 RMSE: 3.99, MAE: 2.93, R2: 0.91
+2026-03-25 02:35:18,439 - INFO - ridge Fold 5 RMSE: 4.11, MAE: 2.88, R2: 0.97
+2026-03-25 02:35:18,440 - INFO - ridge Average RMSE: 4.49, MAE: 3.30, R2: 0.93
+2026-03-25 02:35:18,444 - INFO - Training svr for Karachi...
+2026-03-25 02:35:18,501 - INFO - svr Fold 1 RMSE: 16.22, MAE: 13.17, R2: 0.01
+2026-03-25 02:35:18,685 - INFO - svr Fold 2 RMSE: 9.83, MAE: 7.19, R2: 0.72
+2026-03-25 02:35:19,047 - INFO - svr Fold 3 RMSE: 6.39, MAE: 3.68, R2: 0.85
+2026-03-25 02:35:19,770 - INFO - svr Fold 4 RMSE: 6.77, MAE: 4.35, R2: 0.74
+2026-03-25 02:35:20,986 - INFO - svr Fold 5 RMSE: 8.81, MAE: 5.97, R2: 0.86
+2026-03-25 02:35:20,987 - INFO - svr Average RMSE: 9.60, MAE: 6.87, R2: 0.64
+2026-03-25 02:35:22,580 - INFO - Metrics for Karachi:
+2026-03-25 02:35:22,580 - INFO - random_forest: avg_rmse=7.96, avg_mae=6.01, avg_r2=0.76
+2026-03-25 02:35:22,580 - INFO - ridge: avg_rmse=4.49, avg_mae=3.30, avg_r2=0.93
+2026-03-25 02:35:22,580 - INFO - svr: avg_rmse=9.60, avg_mae=6.87, avg_r2=0.64
+2026-03-25 02:35:22,580 - INFO - 
+=== Training/Retraining Models for Lahore ===
+2026-03-25 02:35:22,580 - INFO - Processing Lahore with data from data/Lahore_historical_aq.csv
+2026-03-25 02:35:22,587 - INFO - Training random_forest for Lahore...
+2026-03-25 02:35:22,864 - INFO - random_forest Fold 1 RMSE: 31.05, MAE: 23.59, R2: 0.61
+2026-03-25 02:35:23,382 - INFO - random_forest Fold 2 RMSE: 19.78, MAE: 17.33, R2: 0.08
+2026-03-25 02:35:24,111 - INFO - random_forest Fold 3 RMSE: 12.52, MAE: 7.32, R2: 0.60
+2026-03-25 02:35:25,144 - INFO - random_forest Fold 4 RMSE: 7.51, MAE: 5.70, R2: 0.84
+2026-03-25 02:35:26,471 - INFO - random_forest Fold 5 RMSE: 16.98, MAE: 12.57, R2: 0.60
+2026-03-25 02:35:26,472 - INFO - random_forest Average RMSE: 17.57, MAE: 13.30, R2: 0.55
+2026-03-25 02:35:28,085 - INFO - Training ridge for Lahore...
+2026-03-25 02:35:28,093 - INFO - ridge Fold 1 RMSE: 6.21, MAE: 4.19, R2: 0.98
+2026-03-25 02:35:28,099 - INFO - ridge Fold 2 RMSE: 7.27, MAE: 5.23, R2: 0.88
+2026-03-25 02:35:28,104 - INFO - ridge Fold 3 RMSE: 11.02, MAE: 6.32, R2: 0.69
+2026-03-25 02:35:28,110 - INFO - ridge Fold 4 RMSE: 7.98, MAE: 4.65, R2: 0.82
+2026-03-25 02:35:28,116 - INFO - ridge Fold 5 RMSE: 7.20, MAE: 5.01, R2: 0.93
+2026-03-25 02:35:28,116 - INFO - ridge Average RMSE: 7.94, MAE: 5.08, R2: 0.86
+2026-03-25 02:35:28,120 - INFO - Training svr for Lahore...
+2026-03-25 02:35:28,177 - INFO - svr Fold 1 RMSE: 41.55, MAE: 31.52, R2: 0.29
+2026-03-25 02:35:28,371 - INFO - svr Fold 2 RMSE: 16.11, MAE: 11.83, R2: 0.39
+2026-03-25 02:35:28,798 - INFO - svr Fold 3 RMSE: 20.32, MAE: 13.18, R2: -0.05
+2026-03-25 02:35:29,637 - INFO - svr Fold 4 RMSE: 18.95, MAE: 13.70, R2: -0.01
+2026-03-25 02:35:30,879 - INFO - svr Fold 5 RMSE: 30.27, MAE: 19.71, R2: -0.28
+2026-03-25 02:35:30,880 - INFO - svr Average RMSE: 25.44, MAE: 17.99, R2: 0.07
+2026-03-25 02:35:32,584 - INFO - Metrics for Lahore:
+2026-03-25 02:35:32,584 - INFO - random_forest: avg_rmse=17.57, avg_mae=13.30, avg_r2=0.55
+2026-03-25 02:35:32,584 - INFO - ridge: avg_rmse=7.94, avg_mae=5.08, avg_r2=0.86
+2026-03-25 02:35:32,584 - INFO - svr: avg_rmse=25.44, avg_mae=17.99, avg_r2=0.07
+2026-03-25 02:35:32,585 - INFO - 
+=== Training/Retraining Models for Islamabad ===
+2026-03-25 02:35:32,585 - INFO - Processing Islamabad with data from data/Islamabad_historical_aq.csv
+2026-03-25 02:35:32,590 - INFO - Training random_forest for Islamabad...
+2026-03-25 02:35:32,867 - INFO - random_forest Fold 1 RMSE: 21.64, MAE: 10.70, R2: 0.40
+2026-03-25 02:35:33,399 - INFO - random_forest Fold 2 RMSE: 19.68, MAE: 14.71, R2: 0.20
+2026-03-25 02:35:34,137 - INFO - random_forest Fold 3 RMSE: 5.79, MAE: 4.75, R2: 0.83
+2026-03-25 02:35:35,131 - INFO - random_forest Fold 4 RMSE: 7.98, MAE: 6.54, R2: 0.50
+2026-03-25 02:35:36,409 - INFO - random_forest Fold 5 RMSE: 7.00, MAE: 5.33, R2: 0.75
+2026-03-25 02:35:36,410 - INFO - random_forest Average RMSE: 12.42, MAE: 8.41, R2: 0.54
+2026-03-25 02:35:37,970 - INFO - Training ridge for Islamabad...
+2026-03-25 02:35:37,977 - INFO - ridge Fold 1 RMSE: 3.80, MAE: 1.56, R2: 0.98
+2026-03-25 02:35:37,982 - INFO - ridge Fold 2 RMSE: 5.53, MAE: 4.06, R2: 0.94
+2026-03-25 02:35:37,988 - INFO - ridge Fold 3 RMSE: 1.87, MAE: 1.37, R2: 0.98
+2026-03-25 02:35:37,994 - INFO - ridge Fold 4 RMSE: 2.10, MAE: 1.65, R2: 0.97
+2026-03-25 02:35:37,999 - INFO - ridge Fold 5 RMSE: 4.95, MAE: 3.67, R2: 0.88
+2026-03-25 02:35:37,999 - INFO - ridge Average RMSE: 3.65, MAE: 2.46, R2: 0.95
+2026-03-25 02:35:38,004 - INFO - Training svr for Islamabad...
+2026-03-25 02:35:38,030 - INFO - svr Fold 1 RMSE: 27.24, MAE: 13.80, R2: 0.05
+2026-03-25 02:35:38,213 - INFO - svr Fold 2 RMSE: 15.52, MAE: 10.39, R2: 0.50
+2026-03-25 02:35:38,758 - INFO - svr Fold 3 RMSE: 7.89, MAE: 6.20, R2: 0.69
+2026-03-25 02:35:39,759 - INFO - svr Fold 4 RMSE: 14.38, MAE: 10.16, R2: -0.61
+2026-03-25 02:35:41,349 - INFO - svr Fold 5 RMSE: 10.82, MAE: 6.96, R2: 0.41
+2026-03-25 02:35:41,349 - INFO - svr Average RMSE: 15.17, MAE: 9.50, R2: 0.21
+2026-03-25 02:35:43,509 - INFO - Metrics for Islamabad:
+2026-03-25 02:35:43,509 - INFO - random_forest: avg_rmse=12.42, avg_mae=8.41, avg_r2=0.54
+2026-03-25 02:35:43,509 - INFO - ridge: avg_rmse=3.65, avg_mae=2.46, avg_r2=0.95
+2026-03-25 02:35:43,509 - INFO - svr: avg_rmse=15.17, avg_mae=9.50, avg_r2=0.21
